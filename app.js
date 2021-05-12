@@ -15,6 +15,8 @@ const debug = require('debug')(
 );
 
 const app = express();
+hbs.localsAsTemplateData(app);
+
 
 // require database configuration
 require('./configs/db.config');
